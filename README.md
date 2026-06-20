@@ -1,39 +1,31 @@
-# Chirpy Starter
+# inneromost blog
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+Jekyll blog published at [inneromost.com](https://inneromost.com) with GitHub Pages.
 
-A minimal, ready-to-use template for creating a blog with the [**Chirpy**][chirpy] Jekyll theme. Get up and running in minutes with all critical files pre-configured.
+## Manage from pi.home
 
-## Why This Starter Exists
+The working copy lives at `~/inneromost-blog` on `inneromost@pi.home`.
 
-When installing Chirpy through [RubyGems.org][gem], Jekyll can only read a subset of theme files (`_data`, `_layouts`, `_includes`, `_sass`, `assets`) and limited `_config.yml` options from the gem. As a result, users cannot enjoy the full out-of-the-box experience that Chirpy offers.
-
-To unlock all features, the following files must be present in your Jekyll site:
-
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+```bash
+ssh inneromost@pi.home
+cd ~/inneromost-blog
+git pull --ff-only
 ```
 
-This starter bundles those files from the latest **Chirpy** release along with a [CD][CD] workflow, so you can start writing immediately.
+Add posts to `_posts/` using the filename format `YYYY-MM-DD-title.md`. Preview a
+change with:
 
-## Usage
+```bash
+bundle install
+bundle exec jekyll serve --host 0.0.0.0
+```
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+Publish by committing and pushing to `main`:
 
-## Contributing
+```bash
+git add _posts
+git commit -m "Add post: title"
+git push
+```
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
-
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+The GitHub Actions workflow builds, checks, and deploys each push.

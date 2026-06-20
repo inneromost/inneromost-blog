@@ -30,9 +30,10 @@ Everything here is from authorized testing, my own lab, or public research.
 
 ## Work with me
 
-- 📧 **[contact@inneromost.com](mailto:contact@inneromost.com)**
-- 🌐 **[inneromost.com](https://inneromost.com)**
-- 💻 **[github.com/inneromost](https://github.com/inneromost)**
+- **Email:** [info@innermostlabs.com](mailto:info@innermostlabs.com)
+- **LinkedIn:** [linkedin.com/in/inneromost](https://www.linkedin.com/in/inneromost/)
+- **X:** [x.com/inneromost](https://x.com/inneromost)
+- **GitHub:** [github.com/inneromost](https://github.com/inneromost)
 
 > All testing described on this site was performed with explicit authorization or
 > in isolated lab environments. Nothing here is intended to facilitate unauthorized access.

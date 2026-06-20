@@ -24,27 +24,25 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://blog.inneromost.com"
+url: "https://inneromost.com"
 
 github:
   username: inneromost # change to your GitHub username
 
 twitter:
-  username: # fill in your Twitter username (without @)
+  username: inneromost
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: inneromost
-  email: contact@inneromost.com # change to your contact address
+  email: info@innermostlabs.com
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/inneromost
-    - https://inneromost.com
-    # Uncomment/add more as needed:
-    # - https://www.linkedin.com/in/your-handle
-    # - https://twitter.com/your-handle
+    - https://www.linkedin.com/in/inneromost/
+    - https://x.com/inneromost
 
 # Site Verification Settings
 webmaster_verifications:
@@ -100,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assets/img/avatar.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
